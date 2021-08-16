@@ -1,4 +1,20 @@
 @media screen and (min-width: 700px) {
+  @-webkit-keyframes slidein-left {
+    from {
+      margin-left: -1000px;
+    }
+    to {
+      margin-left: 0px;
+    }
+  }
+  @keyframes slidein-left {
+    from {
+      margin-left: -1000px;
+    }
+    to {
+      margin-left: 0px;
+    }
+  }
   body .error {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -18,7 +34,11 @@
   }
   body .error i {
     color: #FF4242;
-    font-size: 70px;
+    font-size: 40px;
+    -webkit-animation-name: slidein-left;
+            animation-name: slidein-left;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
   }
   main {
     display: none;

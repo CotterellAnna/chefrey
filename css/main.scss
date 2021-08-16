@@ -1,5 +1,14 @@
 @media screen and(min-width:700px){
     
+    @keyframes slidein-left {
+        from{
+            margin-left: -1000px;
+        }
+        to{
+            margin-left: 0px;
+        }
+        
+    }
     body{
         .error{
             display: flex;
@@ -13,7 +22,9 @@
             overflow: hidden;
             i{
                 color: #FF4242;
-                font-size: 70px;
+                font-size: 40px;
+                animation-name: slidein-left;
+                animation-duration: 2s;
             }
         }
     }
