@@ -23,7 +23,10 @@
   main {
     display: none;
   }
-  .app-home {
+  .app-home__main {
+    display: none;
+  }
+  .app-home__nav-bar--fixed {
     display: none;
   }
 }
